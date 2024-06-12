@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* texte blanc */
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh; /* garantit que le corps occupe au moins la hauteur de la fenêtre */
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .rabbit {
+            position: absolute;
+            bottom: 20px; /* distance du bas */
+            right: 20px; /* distance de droite */
+            font-size: 10px; /* taille réduite */
+            white-space: pre;
+            cursor: none; /* curseur de la main */
+            z-index: 999; /* assure que le lapin est au-dessus du contenu */
+        }
+        .new-image {
+            position: absolute;
+            top: 120px; /* distance du haut pour ajuster la position verticale */
+            right: 40px; /* distance de droite pour ajuster la position horizontale */
+            max-width: 2000px; /* taille maximale de l'image */
+            max-height: 2000px; /* taille maximale de l'image */
+        }
+    </style>
+</head>
+<body>
+    <img src="structure2.png" class="new-image">
+    <img src="structure.png">
+    <div class="rabbit" onclick="window.location.href='index.html';">
+       _
+      (\\
+       \||
+     __(_";
+    /    \
+   {}___)\)
+    </div>
+</body>
+</html>
